@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <title>Project Idea</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1> Project Idea</h1>
+  </header>
+
+  <main>
+    <div class="answers">
+      <!-- this has the background -->
+      <h3>Overview</h3>
+      <p>The washing buddy sends you a notification to your device when your washing has finished.
+        It is a small device that is magnetically attached to your washing machine.
+        It is based around a Raspberry Pi 0 and a vibration sensor.
+        When it detects that the vibration has stopped it will send an alert. </p>
+      <p>Later iterations could include a snooze function on the alert so you can choose what time to receive a second reminder.
+        Another feature could be to forward the alert to someone else, which could be useful if you are out of the house.
+        Aesthetic improvements in the case could be implemented as the project progresses as well. </p>
+      <h3>Motivation</h3>
+      <p>I can think of several times when I have been busy or out of the house and forgotten that I had a load of washing on, only to later remember and be frustrated that I had to rewash the load!
+        The motivation behind this project is to create a simple machine that can send a notification to your device to remind you to hang up the washing.
+        With a washing machine in every home and people leading increasingly busy lives there is a potential market for this product to help people manage their housework in their increasingly busy lives. </p>
+      <h3>Description</h3>
+      <p>The washing buddy will be a handy device that sends a reminder to your phone or other device when your washing has finished.</p>
+      <p>The project is based around the Raspberry Pi 0 which is a small computer roughly the size of a credit card.
+        The vibration sensor is roughly 20mm by 30mm and attached to the raspberry pi with a digital sensor cable.
+        The raspberry pi and the vibration sensor will need to be housed in a plastic case which will temporarily attach to your washing machine with magnets.
+        For the initial prototype I am considering sticking two old phone cases together to make the case.
+        Power will be supplied via the official Raspberry Pi power supply and cable, but if I can source a reasonably priced portable option, I will consider that. </p>
+      <p>The Python script will be set up to detect that there is no longer an input from the vibration sensor then use Pushover to send an alert to the nominated device.
+        A delay will be added before sending the message to make sure false alert from spin cycles are not generated. </p>
+      <p>If there is more time to continue to develop the project the next addition will be a snooze function.
+        This will allow the user to reply to the first reminder to set a second alert in a similar manner to the snooze function on an alarm.
+        A more advanced option to explore would be to allow the user to set a time for the subsequent alerts to occur. </p>
+      <p>Another idea for further development would be to allow the user to nominate other devices to send the alert to, or to forward the alert to another person once they receive it. </p>
+      <p>These functions will enable people to continue to live their busy urban lives without being tied down by the realities of domestic life.
+        It can also make it easier for couples or roommates in share houses to coordinate chores. </p>
+      <p>People with larger houses where it is more difficult to hear the alert that the washing has finished will see more benefit from this product,
+        which may mean that a higher price point is viable as it could be marketed to people on higher incomes. </p>
+      <p>Additionally, this product could be extremely helpful for people with hearing impairments or other disabilities.
+        The vibrate setting on their device and the visual alert could be an effective reminder where the auditory alert from the washing machine is not.
+        To specialise this device towards assisting the elderly who may not be comfortable with smart phones we could alter the project
+        so that instead of sending an alter via Pushover it illuminates a light attached to the laundry door to indicate that the washing has finished. </p>
+      <h3>Tools and Technologies </h3>
+      <p>The hardware required for this project will be based around the raspberry pi 0, a small approximately $10 computer.
+        This will receive inputs from a vibration sensor, which are available for $5 to $10 online in Australia.
+        A power supply will also be required for approximately $19.
+        The washing buddy will be attached to the washing machine with rare earth magnets, which Bunnings sell in a pack of 10 for $7 </p>
+      <p>The software will be developed using Python, which is a free, open-source programming language.
+        To avoid sim cards and associated costs pushover simple notifications will be used at a cost of $5 per device.
+        Pushover has an extensive API library that includes Python. </p>
+      <p>Based on these required tolls and technology the initial prototype should cost $46-52 to create. </p>
+      <h3>Skills Required</h3>
+      <p>This project will require some ability to code using Python as well as the skill to manipulate and set up hardware to create the prototype.
+        Thankfully because the raspberry pi was designed as a teaching and learning aid to get students excited about programming,
+        engineering and computers there is an extensive library of easy-to-understand support documentation.
+        The official raspberry pi website includes guides and project ideas to walk you through setting up both the hardware and software.
+        There are also numerous independent raspberry pi blogs and projects elsewhere online.
+        This project will not involve any soldering and as such minimises the complexity on the hardware side. </p>
+      <h3>Outcome</h3>
+      <p>If this project is successful, we will be able to use the device to detect when a washing cycle has finished and send an alert to our devices.
+        This will make it harder to forget to hang up the washing and will make housework easier by preventing you from having to do the same washing twice.
+        If the project works well and is marketable the next step would be to try to find ways to lower the input cost by investigating cheaper power solutions and developing our own notification software. </p>
+    </div>
+  </main>
+
+  <footer>
+    Click <a href="index.html">here</a> to return to the main page
+    <!-- Hyperlink to main page-->
+  </footer>
+
+</body>
+
+</html>
